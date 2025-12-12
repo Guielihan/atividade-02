@@ -1,0 +1,243 @@
+body{
+  padding: 25px; 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: radial-gradient(circle at 20% 10%, rgba(92,106,196,0.15), transparent 45%),
+              linear-gradient(180deg, #eef3ff 0%, #f7f7fb 40%, #f4f4f4 100%);
+}
+
+.title {
+  color: #5C6AC4;
+}
+
+.hero{
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 26px;
+  color: #fff;
+  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.18), transparent 55%),
+              linear-gradient(135deg, #0b5ed7, #6b2cff);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:-80px;
+  background: radial-gradient(circle at 70% 10%, rgba(0,255,255,0.14), transparent 55%);
+  pointer-events:none;
+}
+
+.hero-content{
+  position: relative;
+  max-width: 900px;
+}
+
+.hero h1{ margin: 0 0 6px; font-size: 2rem; }
+.hero h2{ margin: 0 0 10px; font-weight: 600; opacity: .95; }
+.hero p { margin: 0 0 10px; opacity: .95; }
+
+.time-line{
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  display: inline-block;
+}
+
+.school-badge{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.20);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.school-badge img{
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.school-text{
+  font-weight: 800;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.menu{
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(10, 79, 181, 0.92);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  display: inline-block;
+}
+
+.menu a:hover{
+  background: rgba(255,255,255,0.26);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+}
+
+main{
+  max-width: 900px;
+  margin: 18px auto;
+}
+
+.card{
+  margin-top: 16px;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+}
+
+:target{
+  outline: 2px solid rgba(11,94,215,0.45);
+  box-shadow: 0 0 0 6px rgba(11,94,215,0.10), 0 14px 28px rgba(0,0,0,0.12);
+  animation: alvo 600ms ease;
+}
+
+@keyframes alvo{
+  0%   { transform: scale(0.99); }
+  60%  { transform: scale(1.01); }
+  100% { transform: scale(1); }
+}
+
+.midia{
+  background: linear-gradient(135deg, #ffffff, #f2f7ff);
+  border: 1px solid rgba(11,94,215,0.14);
+}
+
+audio{
+  width: 100%;
+  margin-top: 6px;
+}
+
+iframe{
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 6px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+#artigo, #secao, #midia{
+  scroll-margin-top: 120px;
+}
+
+.footer{
+  text-align: center;
+  padding: 14px;
+  color: white;
+  background: #121826;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.school-badge{
+  cursor: default;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.25),
+    0 0 0 rgba(92,106,196,0);
+  position: absolute;
+  overflow: hidden;
+}
+
+.school-badge::before{
+  content:"";
+  position:absolute;
+  inset:-60%;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255,255,255,0.35) 50%,
+    transparent 60%
+  );
+  transform: translateX(-70%) rotate(10deg);
+  opacity: 0;
+  transition: transform .6s ease, opacity .3s ease;
+  pointer-events:none;
+}
+
+.school-badge:hover{
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.35),
+    0 0 22px rgba(92,106,196,0.55),
+    0 0 36px rgba(107,44,255,0.35);
+}
+
+.school-badge:hover::before{
+  opacity: 1;
+  transform: translateX(70%) rotate(10deg);
+}
+
+@keyframes badgeGlow {
+  0%   { box-shadow: 0 0 18px rgba(92,106,196,0.35); }
+  50%  { box-shadow: 0 0 28px rgba(107,44,255,0.55); }
+  100% { box-shadow: 0 0 18px rgba(92,106,196,0.35); }
+}
+
+.school-badge{
+  animation: badgeGlow 3.5s ease-in-out infinite;
+}
+
+.school-badge img{
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.school-badge:hover img{
+  transform: rotate(-2deg) scale(1.05);
+  filter: brightness(1.15);
+}
+
+.school-text{
+  text-shadow: 0 0 10px rgba(255,255,255,0.35);
+}

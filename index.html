@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Página Semântica — Guilherme Queiroz (Guielihan)</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="school-badge">
+      <img
+        src="https://s10.aconvert.com/convert/p3r68-cdx67/aedeg-v0f7p.jpg"
+        alt="Geração Tech 3.0"
+      />
+      <div class="school-text">Geração Tech 3.0 - Atividade 02</div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="title">Página Semântica de Estudos</h1>
+      <h2>HTML organizado, claro e do jeitinho certo</h2>
+
+      <p>
+        Olá! Eu sou <strong>Guilherme Queiroz</strong> (Guielihan) e esta página é um exercício
+        para praticar HTML semântico, navegação e elementos multimídia.
+      </p>
+
+      <p class="time-line">
+        Hora: <strong id="currentTime">carregando...</strong>
+      </p>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#artigo">Artigo</a></li>
+      <li><a href="#secao">Seção</a></li>
+      <li><a href="#midia">Mídia</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="artigo" class="card">
+      <h2>Aprendendo HTML Semântico</h2>
+      <p>
+        Esta página foi criada para praticar o uso correto de tags semânticas, deixando o conteúdo bem estruturado,
+        fácil de ler.
+      </p>
+    </article>
+
+    <section id="secao" class="card">
+      <h3>O que esta página contém?</h3>
+      <ul>
+        <li>Um cabeçalho com título, subtítulo e introdução</li>
+        <li>Um menu de navegação com links funcionando</li>
+        <li>Um conteúdo principal com article e section</li>
+        <li>Uma área de mídia com áudio e vídeo</li>
+      </ul>
+    </section>
+
+    <section id="midia" class="card midia">
+      <h3>Mídia (MP3 e MP4)</h3>
+      <p>Exemplos de elementos multimídia usando HTML:</p>
+
+      <h4>Áudio</h4>
+      <audio controls>
+        <source src="https://s19.aconvert.com/convert/p3r68-cdx67/3mv0v-r8ve1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+
+      <h4>Vídeo do YouTube</h4>
+      <iframe
+        height="360"
+        src="https://www.youtube.com/embed/vCrHrGOUxEw"
+        title="Vídeo do YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© Guilherme Queiroz (Guielihan) — Exercício de HTML</small>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
